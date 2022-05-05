@@ -148,7 +148,7 @@ def ustvariNovOglasStran():
     time.sleep(19)
     driver.find_element_by_name("potrdi").click()
     
-    WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "supurl"))).click()
+    #WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "supurl"))).click()
 
 
 def pridobiPodatkeZaPrvoStran():
