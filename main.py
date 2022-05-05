@@ -145,7 +145,7 @@ def ustvariNovOglasStran():
     driver.execute_script("arguments[0].click();",
                           driver.find_element_by_xpath("//*[contains(text(),'" + gorivo + "')]"))
     time.sleep(1)
-    time.sleep(19)
+    time.sleep(5)
     driver.find_element_by_name("potrdi").click()
     
     #WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "supurl"))).click()
