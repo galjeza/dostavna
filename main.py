@@ -158,10 +158,10 @@ def pridobiPodatkeZaPrvoStran():
     global letoReg
     global mesReg
     global gorivo
-    znamka = WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.NAME, "znamka"))).get_attribute(
+    znamka = WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.NAME, "znamkaTEMP"))).get_attribute(
         "value")
 
-    model = driver.find_element_by_name("model").get_attribute("value")
+    model = driver.find_element_by_name("modelTEMP").get_attribute("value")
     letoReg = driver.find_element_by_id("letoReg").get_attribute("value")
     select = Select(driver.find_element_by_id("mesReg"))
     mesReg = select.first_selected_option.text.strip()
