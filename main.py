@@ -147,7 +147,7 @@ def ustvariNovOglasStran():
     time.sleep(1)
 
     driver.find_element_by_name("potrdi").click()
-    time.sleep(1)
+    time.sleep(19)
     WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "supurl"))).click()
 
 
