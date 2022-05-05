@@ -129,7 +129,7 @@ def ustvariNovOglasStran():
            print(error)
            Select(driver.find_element_by_name("model")).select_by_value("modela ni na seznamu")
     time.sleep(1)
-    Select(driver.find_element_by_name("oblika")).select_by_index(0)
+    Select(driver.find_element_by_name("oblika")).select_by_index(4)
     time.sleep(1)
     try:
         Select(driver.find_element_by_name("mesec")).select_by_value(mesReg)
@@ -145,9 +145,9 @@ def ustvariNovOglasStran():
     driver.execute_script("arguments[0].click();",
                           driver.find_element_by_xpath("//*[contains(text(),'" + gorivo + "')]"))
     time.sleep(1)
-
-    driver.find_element_by_name("potrdi").click()
     time.sleep(19)
+    driver.find_element_by_name("potrdi").click()
+    
     WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "supurl"))).click()
 
 
